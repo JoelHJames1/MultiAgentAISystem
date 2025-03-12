@@ -1,0 +1,15 @@
+#!/bin/bash
+# JAFS - Jarvis Agent Framework System
+# Simple shell wrapper for the JAFS Python script
+
+# Get the directory of this script
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Change to the script directory
+cd "$SCRIPT_DIR"
+
+# Set PYTHONPATH to the current directory
+export PYTHONPATH="$SCRIPT_DIR"
+
+# Run the Python script with all arguments
+python jafs.py "$@"

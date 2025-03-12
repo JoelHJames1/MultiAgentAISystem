@@ -144,16 +144,32 @@ PYTHONPATH=$(pwd) python -m jafs.main --task "Hello, world!"
 
 ## 🚀 Quick Start
 
-Once installed, you can start using JAFS right away:
+Once installed, you can start using JAFS right away with our user-friendly interface:
 
 ```bash
 # Make sure you're in the correct directory
 cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
-# Run JAFS with a simple task
-PYTHONPATH=$(pwd) python -m jafs.main --task "Find the latest news about artificial intelligence"
+# Use the simple command-line interface
+./jafs "Calculate 2 + 2"
+./jafs "Research quantum computing"
+./jafs "Write a poem about AI"
 
-# Run with a specific mode (single, multi, or auto)
+# Add --verbose for more detailed output
+./jafs --verbose "Find the latest news about artificial intelligence"
+```
+
+The system will automatically detect the type of task and choose the appropriate mode (single, multi, or auto) based on your request.
+
+### Advanced Usage (if needed)
+
+You can still use the original interface for more control:
+
+```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
+# Run JAFS with a specific mode
 PYTHONPATH=$(pwd) python -m jafs.main --mode multi --task "Research quantum computing"
 
 # Run with verbose output
@@ -211,14 +227,14 @@ logging:
 
 ### 4. Run JAFS with Ollama
 
-Now you can run JAFS with Ollama:
+Now you can run JAFS with Ollama using our user-friendly interface:
 
 ```bash
 # Make sure you're in the correct directory
 cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
 # Run JAFS with Ollama
-PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 2 + 2"
+./jafs "Calculate 2 + 2"
 ```
 
 ### 5. Troubleshooting Ollama Integration
@@ -240,7 +256,7 @@ If you encounter issues with Ollama integration:
 # Make sure you're in the correct directory
 cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
-PYTHONPATH=$(pwd) python -m jafs.main --task "What is the capital of France?"
+./jafs "What is the capital of France?"
 ```
 
 #### Calculations
@@ -249,16 +265,25 @@ PYTHONPATH=$(pwd) python -m jafs.main --task "What is the capital of France?"
 # Make sure you're in the correct directory
 cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
-PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 3 * 4 + 5"
+./jafs "Calculate 3 * 4 + 5"
 ```
 
-#### Multi-Agent Mode
+#### Research Tasks
 
 ```bash
 # Make sure you're in the correct directory
 cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
-PYTHONPATH=$(pwd) python -m jafs.main --mode multi --task "Research the impact of artificial intelligence on healthcare"
+./jafs "Research the impact of artificial intelligence on healthcare"
+```
+
+#### Creative Tasks
+
+```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
+./jafs "Write a short story about robots and humans living together"
 ```
 
 ## 📚 Documentation
