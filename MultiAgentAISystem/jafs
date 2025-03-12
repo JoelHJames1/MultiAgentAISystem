@@ -5,11 +5,11 @@
 # Get the directory of this script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-# Change to the script directory
-cd "$SCRIPT_DIR"
+# Get the parent directory (where jafs and anus directories are)
+PARENT_DIR="$( cd "$SCRIPT_DIR/.." &> /dev/null && pwd )"
 
-# Set PYTHONPATH to the current directory
-export PYTHONPATH="$SCRIPT_DIR"
+# Set PYTHONPATH to the parent directory
+export PYTHONPATH="$PARENT_DIR"
 
 # Run the Python script with all arguments
-python jafs.py "$@"
+python "$SCRIPT_DIR/jafs.py" "$@"

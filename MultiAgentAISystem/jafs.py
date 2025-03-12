@@ -12,6 +12,7 @@ import sys
 import os
 import argparse
 import re
+import subprocess
 
 def detect_task_type(task):
     """
@@ -23,9 +24,6 @@ def detect_task_type(task):
     Returns:
         The appropriate mode for the task
     """
-    # Set PYTHONPATH to the current directory
-    os.environ["PYTHONPATH"] = os.getcwd()
-    
     # Default to auto mode
     mode = "auto"
     
@@ -108,29 +106,38 @@ def main():
     # Detect the task type if mode is not specified
     mode = args.mode if args.mode else detect_task_type(task)
     
+    # Get the parent directory (where jafs and anus directories are)
+    parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
     # Build the command
-    cmd = f"python -m jafs.main"
+    cmd = [
+        "python", 
+        "-m", 
+        "jafs.main"
+    ]
     
     # Add mode if specified
     if mode:
-        cmd += f" --mode {mode}"
+        cmd.extend(["--mode", mode])
     
     # Add verbose flag if specified
     if args.verbose:
-        cmd += " --verbose"
+        cmd.append("--verbose")
     
     # Add task
-    cmd += f" --task \"{task}\""
+    cmd.extend(["--task", task])
     
-    # Set PYTHONPATH to the current directory
-    os.environ["PYTHONPATH"] = os.getcwd()
+    # Set PYTHONPATH to the parent directory
+    env = os.environ.copy()
+    env["PYTHONPATH"] = parent_dir
     
     # Print the command if verbose
     if args.verbose:
-        print(f"Executing: {cmd}")
+        print(f"Executing: {' '.join(cmd)}")
+        print(f"PYTHONPATH: {parent_dir}")
     
     # Execute the command
-    os.system(cmd)
+    subprocess.run(cmd, env=env, cwd=parent_dir)
 
 if __name__ == "__main__":
     main()
