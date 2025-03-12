@@ -148,7 +148,7 @@ Once installed, you can start using JAFS right away with our user-friendly inter
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 # Use the simple command-line interface
 ./jafs "Calculate 2 + 2"
@@ -231,7 +231,7 @@ Now you can run JAFS with Ollama using our user-friendly interface:
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 # Run JAFS with Ollama
 ./jafs "Calculate 2 + 2"
@@ -254,7 +254,7 @@ If you encounter issues with Ollama integration:
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 ./jafs "What is the capital of France?"
 ```
@@ -263,7 +263,7 @@ cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 ./jafs "Calculate 3 * 4 + 5"
 ```
@@ -272,7 +272,7 @@ cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 ./jafs "Research the impact of artificial intelligence on healthcare"
 ```
@@ -281,9 +281,35 @@ cd /path/to/MultiAgentAISystem/MultiAgentAISystem
 
 ```bash
 # Make sure you're in the correct directory
-cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+cd /path/to/MultiAgentAISystem
 
 ./jafs "Write a short story about robots and humans living together"
+```
+
+## 🎭 Available Tools
+
+JAFS comes with a variety of tools to help you accomplish different tasks:
+
+### Calculator Tool
+Performs mathematical calculations with support for complex expressions.
+
+### Search Tool
+Searches the web for information on a given topic.
+
+### Code Tool
+Generates, analyzes, and executes code in various programming languages.
+
+### Text Tool
+Processes and manipulates text, including summarization, translation, and formatting.
+
+### Direct Response Tool
+Generates creative content like poems, stories, essays, and more. This tool uses the language model's capabilities to create engaging and thoughtful content based on your request.
+
+Example usage:
+```bash
+./jafs "Write a poem about artificial intelligence"
+./jafs "Create a short story about space exploration"
+./jafs "Compose a letter to a future generation"
 ```
 
 ## 📚 Documentation
