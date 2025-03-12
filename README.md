@@ -1,50 +1,48 @@
-# 🍑 Anus: Autonomous Networked Utility System
+# 🤖 JAFS: Jarvis Agent Framework System
 
 <p align="center">
-  <img src="assets/anus_logo.png" alt="Anus AI Logo" width="200"/>
+  <img src="assets/jafs_logo.png" alt="JAFS AI Logo" width="200"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/nikmcfly/ANUS/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/JoelHJames1/MultiAgentAISystem/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python version"></a>
   <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
-  <a href="https://github.com/nikmcfly/ANUS/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions welcome"></a>
+  <a href="https://github.com/JoelHJames1/MultiAgentAISystem/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions welcome"></a>
   <br>
-  <a href="https://github.com/nikmcfly/ANUS/stargazers"><img src="https://img.shields.io/github/stars/nikmcfly/ANUS.svg?style=social&label=Star" alt="GitHub stars"></a>
-  <a href="https://github.com/nikmcfly/ANUS/network/members"><img src="https://img.shields.io/github/forks/nikmcfly/ANUS.svg?style=social&label=Fork" alt="GitHub forks"></a>
-  <a href="https://github.com/nikmcfly/ANUS/issues"><img src="https://img.shields.io/github/issues/nikmcfly/ANUS.svg" alt="GitHub issues"></a>
+  <a href="https://github.com/JoelHJames1/MultiAgentAISystem/stargazers"><img src="https://img.shields.io/github/stars/JoelHJames1/MultiAgentAISystem.svg?style=social&label=Star" alt="GitHub stars"></a>
+  <a href="https://github.com/JoelHJames1/MultiAgentAISystem/network/members"><img src="https://img.shields.io/github/forks/JoelHJames1/MultiAgentAISystem.svg?style=social&label=Fork" alt="GitHub forks"></a>
+  <a href="https://github.com/JoelHJames1/MultiAgentAISystem/issues"><img src="https://img.shields.io/github/issues/JoelHJames1/MultiAgentAISystem.svg" alt="GitHub issues"></a>
   <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-  <a href="https://anus-ai.github.io/docs"><img src="https://img.shields.io/badge/docs-latest-brightgreen.svg" alt="Documentation Status"></a>
-  <a href="https://discord.gg/anus-ai"><img src="https://img.shields.io/discord/1234567890?color=7289da&label=Discord&logo=discord&logoColor=white" alt="Discord"></a>
 </p>
 
 ## Table of Contents
 
 - [Introduction](#-introduction)
-- [Why Anus?](#-why-anus)
+- [Why JAFS?](#-why-jafs)
 - [Features & Capabilities](#-features--capabilities)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
+- [Running with Ollama](#-running-with-ollama)
 - [Usage Examples](#-usage-examples)
 - [Documentation](#-documentation)
 - [Contributing](#-contributing)
-- [Community](#-community)
 - [License](#-license)
 
 ## 🌟 Introduction
 
-**Anus** (Autonomous Networked Utility System) is a powerful, flexible, and accessible open-source AI agent framework designed to revolutionize task automation. Built with modern AI technologies and best practices, Anus represents the next generation of AI agent frameworks, offering unparalleled capabilities and ease of use.
+**JAFS** (Jarvis Agent Framework System) is a powerful, flexible, and accessible open-source AI agent framework designed to revolutionize task automation. Built with modern AI technologies and best practices, JAFS represents the next generation of AI agent frameworks, offering unparalleled capabilities and ease of use.
 
-Anus empowers users to create AI agents that can:
+JAFS empowers users to create AI agents that can:
 - Execute complex tasks through natural language instructions
 - Collaborate in multi-agent environments to solve problems
 - Interact with web services, documents, and code
 - Process multimodal inputs including text, images, and audio
 - Adapt to different domains and use cases
 
-Whether you're a developer looking to build AI-powered applications, a researcher exploring agent-based systems, or an enthusiast interested in the latest AI technologies, Anus provides the tools and flexibility you need to succeed.
+Whether you're a developer looking to build AI-powered applications, a researcher exploring agent-based systems, or an enthusiast interested in the latest AI technologies, JAFS provides the tools and flexibility you need to succeed.
 
-## 💡 Why Anus?
+## 💡 Why JAFS?
 
 - **Truly Open Source**: No barriers, no invite codes, just pure open-source goodness
 - **Hybrid Architecture**: Combines single-agent simplicity with multi-agent power
@@ -107,38 +105,14 @@ Whether you're a developer looking to build AI-powered applications, a researche
 ### 🔄 Flexible Model Integration
 
 - **OpenAI API Support**: Seamless integration with GPT-4 and newer models
-- **Open-Source Models**: Support for Llama, Mistral, and other open-source models
+- **Open-Source Models**: Support for Llama, Mistral, and other open-source models via Ollama
 - **Local Deployment**: Run models locally for privacy and reduced costs
 - **Model Switching**: Automatically select the appropriate model based on task requirements
 - **Fallback Mechanisms**: Gracefully handle API issues by switching to alternative models
 
-### 👥 User-Friendly Interfaces
-
-- **Command-Line Interface**: Simple and intuitive commands for terminal users
-- **Web Interface**: Optional browser-based dashboard for visual interaction
-- **API Integration**: RESTful API for embedding Anus in other applications
-- **Conversation History**: Review and continue previous conversations
-- **Task Monitoring**: Track progress of long-running tasks
-
-### 🔒 Privacy and Security
-
-- **Local Execution**: Process sensitive data locally without sending to external APIs
-- **API Key Management**: Secure handling of API keys and credentials
-- **Permission System**: Fine-grained control over agent capabilities
-- **Audit Logging**: Comprehensive logging of all agent actions
-- **Sandboxed Execution**: Secure environment for running untrusted code
-
-### 🧩 Extensibility
-
-- **Plugin System**: Easily extend functionality with custom plugins
-- **Custom Tools**: Create your own tools to expand agent capabilities
-- **Model Adapters**: Add support for new AI models
-- **Middleware**: Insert custom processing steps in the agent workflow
-- **Event Hooks**: React to specific events in the agent lifecycle
-
 ## 🔧 Installation
 
-Anus AI supports multiple installation methods to accommodate different user preferences and environments.
+JAFS supports multiple installation methods to accommodate different user preferences and environments.
 
 ### Prerequisites
 
@@ -146,147 +120,105 @@ Anus AI supports multiple installation methods to accommodate different user pre
 - pip (Python package installer)
 - Git
 
-### Method 1: Pip Installation (Recommended for Users)
-
-```bash
-# Install from PyPI
-pip install anus-ai
-
-# Verify installation
-anus --version
-```
-
-### Method 2: From Source (Recommended for Developers)
+### Method 1: From Source (Recommended for Developers)
 
 ```bash
 # Clone the repository
-git clone https://github.com/nikmcfly/ANUS.git
-cd ANUS
+git clone https://github.com/JoelHJames1/MultiAgentAISystem.git
+cd MultiAgentAISystem
 
 # Create and activate a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install in development mode
-pip install -e .
+# Install dependencies
+pip install -r requirements.txt
 
 # Verify installation
-anus --version
-```
-
-### Method 3: Using Docker
-
-```bash
-# Pull the Docker image
-docker pull anusai/anus:latest
-
-# Run Anus in a container
-docker run -it anusai/anus:latest
-```
-
-### Method 4: Using Conda
-
-```bash
-# Create a new conda environment
-conda create -n anus python=3.11
-conda activate anus
-
-# Install Anus
-pip install anus-ai
-```
-
-### Platform-Specific Instructions
-
-#### Windows
-
-```bash
-# Install required system dependencies
-pip install windows-curses
-
-# If using browser automation
-playwright install
-```
-
-#### macOS
-
-```bash
-# Install required system dependencies
-brew install python@3.11
-
-# If using browser automation
-playwright install
-```
-
-#### Linux
-
-```bash
-# Install required system dependencies
-sudo apt-get update
-sudo apt-get install -y python3.11 python3.11-venv
-
-# If using browser automation
-playwright install
-```
-
-### Optional Dependencies
-
-Anus has several optional features that require additional dependencies:
-
-```bash
-# For document processing
-pip install anus-ai[documents]
-
-# For browser automation
-pip install anus-ai[browser]
-
-# For code execution
-pip install anus-ai[code]
-
-# For all optional features
-pip install anus-ai[all]
-```
-
-### Configuration
-
-After installation, you'll need to configure Anus with your API keys:
-
-1. Create a configuration file:
-
-```bash
-anus init
-```
-
-2. Edit the generated `.anus/config.yaml` file with your API keys:
-
-```yaml
-llm:
-  provider: openai
-  api_key: your_openai_api_key
-  model: gpt-4o
-
-# Optional: Configure other providers
-anthropic:
-  api_key: your_anthropic_api_key
-
-# Optional: Configure tool-specific settings
-browser:
-  headless: true
+python -m jafs.main --task "Hello, world!"
 ```
 
 ## 🚀 Quick Start
 
-Once installed, you can start using Anus right away:
+Once installed, you can start using JAFS right away:
 
 ```bash
-# Run Anus with a simple task
-anus run "Find the latest news about artificial intelligence"
+# Run JAFS with a simple task
+python -m jafs.main --task "Find the latest news about artificial intelligence"
 
-# Run in interactive mode
-anus interactive
+# Run with a specific mode (single, multi, or auto)
+python -m jafs.main --mode multi --task "Research quantum computing"
 
-# Run with a specific configuration file
-anus run --config custom_config.yaml "Summarize this article: https://example.com/article"
+# Run with verbose output
+python -m jafs.main --verbose --task "Calculate 2 + 2"
 ```
+
+## 🤖 Running with Ollama
+
+JAFS has built-in support for running with Ollama, which allows you to use open-source models locally. Here's how to set it up:
+
+### 1. Install Ollama
+
+First, you need to install Ollama on your system. Visit [Ollama's website](https://ollama.ai/) for installation instructions.
+
+### 2. Pull a Model
+
+After installing Ollama, pull a model that you want to use:
+
+```bash
+# Pull a model (e.g., qwq:32b, llama3, mistral, etc.)
+ollama pull qwq:32b
+```
+
+### 3. Configure JAFS to Use Ollama
+
+Edit the `config.yaml` file to use Ollama:
+
+```yaml
+# JAFS Configuration File
+
+model:
+  provider: ollama
+  model_name: qwq:32b  # Replace with your preferred model
+  base_url: "http://localhost:11434"  # Default Ollama API URL
+  temperature: 0.7
+
+agent:
+  name: jafs
+  mode: auto  # Options: single, multi, auto
+  max_iterations: 10
+  memory_capacity: 2000
+  verbose: true
+
+tools:
+  enabled:
+    - calculator
+    - search
+    - text
+    - code
+
+logging:
+  level: DEBUG
+  file: logs/jafs.log
+```
+
+### 4. Run JAFS with Ollama
+
+Now you can run JAFS with Ollama:
+
+```bash
+# Run JAFS with Ollama
+python -m jafs.main --task "Calculate 2 + 2"
+```
+
+### 5. Troubleshooting Ollama Integration
+
+If you encounter issues with Ollama integration:
+
+- Make sure Ollama is running: `ollama serve`
+- Verify the model is available: `ollama list`
+- Check the base URL in config.yaml matches your Ollama setup
+- Ensure the model name in config.yaml matches an available model
 
 ## 📋 Usage Examples
 
@@ -294,203 +226,29 @@ anus run --config custom_config.yaml "Summarize this article: https://example.co
 
 #### Simple Question Answering
 
-```python
-from anus import Agent
-
-# Create a single agent
-agent = Agent()
-
-# Ask a simple question
-response = agent.run("What is the capital of France?")
-print(response)
+```bash
+python -m jafs.main --task "What is the capital of France?"
 ```
 
-#### Web Search
-
-```python
-from anus import Agent
-from anus.tools import SearchTool
-
-# Create an agent with search capabilities
-agent = Agent(tools=[SearchTool()])
-
-# Search for information
-response = agent.run("Find the latest research on quantum computing")
-print(response)
-```
-
-#### Document Analysis
-
-```python
-from anus import Agent
-from anus.tools import DocumentTool
-
-# Create an agent with document processing capabilities
-agent = Agent(tools=[DocumentTool()])
-
-# Analyze a PDF document
-response = agent.run("Summarize this PDF: /path/to/document.pdf")
-print(response)
-```
-
-### Advanced Examples
-
-#### Multi-Agent Collaboration
-
-```python
-from anus import Society, Agent
-
-# Create specialized agents
-researcher = Agent(role="researcher")
-analyst = Agent(role="analyst")
-writer = Agent(role="writer")
-
-# Create a society of agents
-society = Society(agents=[researcher, analyst, writer])
-
-# Execute a complex task with collaboration
-response = society.run(
-    "Research the impact of artificial intelligence on healthcare, " 
-    "analyze the findings, and write a comprehensive report"
-)
-print(response)
-```
-
-#### Browser Automation
-
-```python
-from anus import Agent
-from anus.tools import BrowserTool
-
-# Create an agent with browser capabilities
-agent = Agent(tools=[BrowserTool()])
-
-# Perform a web task
-response = agent.run(
-    "Go to weather.com, check the weather forecast for New York City for the next 5 days, "
-    "and create a summary table"
-)
-print(response)
-```
-
-#### Code Generation and Execution
-
-```python
-from anus import Agent
-from anus.tools import CodeTool
-
-# Create an agent with code execution capabilities
-agent = Agent(tools=[CodeTool()])
-
-# Generate and execute code
-response = agent.run(
-    "Create a Python script that generates a fractal tree visualization using matplotlib"
-)
-print(response)
-```
-
-### Command-Line Interface Examples
-
-#### Running Tasks
+#### Calculations
 
 ```bash
-# Simple information retrieval
-anus run "What is the population of Tokyo?"
-
-# Web search with specific parameters
-anus run --search-depth=3 "Find recent breakthroughs in fusion energy research"
-
-# Document processing
-anus run --file=/path/to/report.pdf "Extract all financial data from this report"
-```
-
-#### Interactive Mode
-
-```bash
-# Start interactive session
-anus interactive
-
-# In interactive mode, you can have a conversation:
-# > Tell me about the history of artificial intelligence
-# > Now create a timeline of major AI milestones
-# > Generate a visualization of this timeline
+python -m jafs.main --task "Calculate 3 * 4 + 5"
 ```
 
 #### Multi-Agent Mode
 
 ```bash
-# Run a complex task with multiple agents
-anus run --mode=multi "Research, analyze, and summarize the current state of renewable energy technologies"
-
-# Specify particular agent roles
-anus run --mode=multi --roles=researcher,analyst,writer "Create a comprehensive market analysis for electric vehicles"
-```
-
-### API Usage
-
-```python
-from anus.api import AnusAPI
-
-# Initialize the API client
-api = AnusAPI(api_key="your_api_key")
-
-# Send a request
-response = api.process_task(
-    task="Generate a business plan for a sustainable fashion startup",
-    mode="multi",
-    output_format="markdown"
-)
-
-# Print or save the response
-print(response.result)
-with open("business_plan.md", "w") as f:
-    f.write(response.result)
-```
-
-### Advanced Configuration
-
-```python
-from anus import Agent, Config
-
-# Create a custom configuration
-config = Config(
-    llm={
-        "provider": "anthropic",
-        "model": "claude-3-opus",
-        "temperature": 0.7,
-    },
-    memory={
-        "type": "persistent",
-        "path": "./agent_memory",
-    },
-    tools={
-        "browser": {"headless": False},
-        "code": {"sandbox": True},
-    }
-)
-
-# Create an agent with custom configuration
-agent = Agent(config=config)
-
-# Run a task
-response = agent.run("Create an interactive data visualization for climate change data")
-print(response)
+python -m jafs.main --mode multi --task "Research the impact of artificial intelligence on healthcare"
 ```
 
 ## 📚 Documentation
 
-For detailed documentation, visit our [Documentation Site](https://anus-ai.github.io/docs).
-
-- [Installation Guide](https://anus-ai.github.io/docs/installation)
-- [Getting Started](https://anus-ai.github.io/docs/getting-started)
-- [Architecture Overview](https://anus-ai.github.io/docs/architecture)
-- [API Reference](https://anus-ai.github.io/docs/api)
-- [Examples](https://anus-ai.github.io/docs/examples)
-- [Contributing Guide](https://anus-ai.github.io/docs/contributing)
+For detailed documentation, visit our [Documentation Site](https://github.com/JoelHJames1/MultiAgentAISystem/docs).
 
 ## 👥 Contributing
 
-We welcome contributions from the community! Anus is designed to be community-driven, and your input helps make it better for everyone.
+We welcome contributions from the community! JAFS is designed to be community-driven, and your input helps make it better for everyone.
 
 ### Ways to Contribute
 
@@ -506,8 +264,8 @@ We welcome contributions from the community! Anus is designed to be community-dr
 
 ```bash
 # Fork the repository on GitHub, then clone your fork
-git clone https://github.com/your-username/anus.git
-cd anus
+git clone https://github.com/your-username/MultiAgentAISystem.git
+cd MultiAgentAISystem
 ```
 
 2. **Set Up Development Environment**
@@ -517,8 +275,8 @@ cd anus
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install development dependencies
-pip install -e ".[dev]"
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 3. **Create a Branch**
@@ -534,80 +292,20 @@ git checkout -b feature/your-feature-name
 - Add tests for new functionality
 - Update documentation as needed
 
-5. **Run Tests**
-
-```bash
-# Run the test suite
-pytest
-
-# Run linting
-flake8
-mypy anus
-```
-
-6. **Submit a Pull Request**
+5. **Submit a Pull Request**
 
 - Push your changes to your fork
 - Submit a pull request from your branch to our main branch
 - Provide a clear description of the changes and any related issues
 
-### Code Style Guidelines
-
-- Follow [PEP 8](https://pep8.org/) for Python code style
-- Use type hints for all function parameters and return values
-- Write docstrings for all functions, classes, and modules
-- Keep functions focused and small (under 50 lines when possible)
-- Use meaningful variable and function names
-
-### Commit Message Guidelines
-
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
-
-```
-<type>(<scope>): <description>
-
-[optional body]
-
-[optional footer(s)]
-```
-
-Types include:
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code changes that neither fix bugs nor add features
-- `test`: Adding or modifying tests
-- `chore`: Changes to the build process or auxiliary tools
-
-### Pull Request Process
-
-1. Update the README.md or documentation with details of changes if appropriate
-2. Update the CHANGELOG.md with details of changes
-3. The PR should work for Python 3.11 and above
-4. PRs require approval from at least one maintainer
-5. Once approved, a maintainer will merge your PR
-
-### Code of Conduct
-
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-## 🌐 Community
-
-Join our community to get help, share ideas, and contribute to the project:
-
-- [Discord Server](https://discord.gg/anus-ai)
-- [Twitter](https://twitter.com/anus_ai)
-- [Reddit](https://reddit.com/r/anus_ai)
-
 ## 📝 License
 
-Anus is released under the [MIT License](LICENSE).
+JAFS is released under the [MIT License](LICENSE).
 
 ```
 MIT License
 
-Copyright (c) 2025 Anus AI Team
+Copyright (c) 2025 JAFS AI Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -626,4 +324,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
