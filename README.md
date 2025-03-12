@@ -135,7 +135,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Verify installation
-python -m jafs.main --task "Hello, world!"
+PYTHONPATH=$(pwd) python -m jafs.main --task "Hello, world!"
 ```
 
 ## 🚀 Quick Start
@@ -144,13 +144,13 @@ Once installed, you can start using JAFS right away:
 
 ```bash
 # Run JAFS with a simple task
-python -m jafs.main --task "Find the latest news about artificial intelligence"
+PYTHONPATH=$(pwd) python -m jafs.main --task "Find the latest news about artificial intelligence"
 
 # Run with a specific mode (single, multi, or auto)
-python -m jafs.main --mode multi --task "Research quantum computing"
+PYTHONPATH=$(pwd) python -m jafs.main --mode multi --task "Research quantum computing"
 
 # Run with verbose output
-python -m jafs.main --verbose --task "Calculate 2 + 2"
+PYTHONPATH=$(pwd) python -m jafs.main --verbose --task "Calculate 2 + 2"
 ```
 
 ## 🤖 Running with Ollama
@@ -208,7 +208,7 @@ Now you can run JAFS with Ollama:
 
 ```bash
 # Run JAFS with Ollama
-python -m jafs.main --task "Calculate 2 + 2"
+PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 2 + 2"
 ```
 
 ### 5. Troubleshooting Ollama Integration
@@ -227,19 +227,19 @@ If you encounter issues with Ollama integration:
 #### Simple Question Answering
 
 ```bash
-python -m jafs.main --task "What is the capital of France?"
+PYTHONPATH=$(pwd) python -m jafs.main --task "What is the capital of France?"
 ```
 
 #### Calculations
 
 ```bash
-python -m jafs.main --task "Calculate 3 * 4 + 5"
+PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 3 * 4 + 5"
 ```
 
 #### Multi-Agent Mode
 
 ```bash
-python -m jafs.main --mode multi --task "Research the impact of artificial intelligence on healthcare"
+PYTHONPATH=$(pwd) python -m jafs.main --mode multi --task "Research the impact of artificial intelligence on healthcare"
 ```
 
 ## 📚 Documentation
