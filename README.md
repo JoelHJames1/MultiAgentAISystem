@@ -127,6 +127,10 @@ JAFS supports multiple installation methods to accommodate different user prefer
 git clone https://github.com/JoelHJames1/MultiAgentAISystem.git
 cd MultiAgentAISystem
 
+# Important: Navigate to the nested MultiAgentAISystem directory
+# The project has a nested directory structure
+cd MultiAgentAISystem
+
 # Create and activate a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -143,6 +147,9 @@ PYTHONPATH=$(pwd) python -m jafs.main --task "Hello, world!"
 Once installed, you can start using JAFS right away:
 
 ```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
 # Run JAFS with a simple task
 PYTHONPATH=$(pwd) python -m jafs.main --task "Find the latest news about artificial intelligence"
 
@@ -207,6 +214,9 @@ logging:
 Now you can run JAFS with Ollama:
 
 ```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
 # Run JAFS with Ollama
 PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 2 + 2"
 ```
@@ -227,18 +237,27 @@ If you encounter issues with Ollama integration:
 #### Simple Question Answering
 
 ```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
 PYTHONPATH=$(pwd) python -m jafs.main --task "What is the capital of France?"
 ```
 
 #### Calculations
 
 ```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
 PYTHONPATH=$(pwd) python -m jafs.main --task "Calculate 3 * 4 + 5"
 ```
 
 #### Multi-Agent Mode
 
 ```bash
+# Make sure you're in the correct directory
+cd /path/to/MultiAgentAISystem/MultiAgentAISystem
+
 PYTHONPATH=$(pwd) python -m jafs.main --mode multi --task "Research the impact of artificial intelligence on healthcare"
 ```
 
@@ -265,6 +284,9 @@ We welcome contributions from the community! JAFS is designed to be community-dr
 ```bash
 # Fork the repository on GitHub, then clone your fork
 git clone https://github.com/your-username/MultiAgentAISystem.git
+cd MultiAgentAISystem
+
+# Important: Navigate to the nested MultiAgentAISystem directory
 cd MultiAgentAISystem
 ```
 
