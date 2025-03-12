@@ -1,7 +1,7 @@
 """
-Command-line interface for the ANUS framework.
+Command-line interface for the JAFS framework.
 
-Remember: With great ANUS comes great responsibility.
+Remember: With great JAFS comes great responsibility.
 """
 
 import os
@@ -15,11 +15,11 @@ import random
 from typing import Dict, List, Any, Optional, Union
 from datetime import datetime
 
-from anus.core.orchestrator import AgentOrchestrator
+from jafs.core.orchestrator import AgentOrchestrator
 
 class CLI(cmd.Cmd):
     """
-    Command-line interface for interacting with the ANUS framework.
+    Command-line interface for interacting with the JAFS framework.
     
     Provides commands for:
     - Executing tasks
@@ -27,24 +27,24 @@ class CLI(cmd.Cmd):
     - Viewing task history
     - Configuration
     
-    Warning: Prolonged exposure to ANUS may cause uncontrollable smirking.
+    Warning: JAFS is designed to make your AI tasks easier and more efficient.
     """
     
-    intro = "Welcome to the ANUS framework. Type help or ? to list commands."
-    prompt = "anus> "
+    intro = "Welcome to the JAFS framework. Type help or ? to list commands."
+    prompt = "jafs> "
     
     # Easter egg jokes for random display
-    _anus_jokes = [
-        "ANUS: Because 'Autonomous Networked Utility System' sounds better in meetings.",
-        "ANUS: The backend system that handles all your crap.",
-        "ANUS: Boldly going where no framework has gone before.",
-        "ANUS: It's not a bug, it's a feature... a very uncomfortable feature.",
-        "ANUS: For when your code needs that extra push from behind.",
-        "ANUS: Working hard so you don't have to explain the acronym to your boss.",
-        "ANUS: The framework that makes other developers snicker during code review.",
-        "ANUS: Tight integration with your backend systems.",
-        "ANUS: Because 'BUTT' was already taken as an acronym.",
-        "ANUS: Making developers uncomfortable in stand-up meetings since 2023."
+    _jafs_jokes = [
+        "JAFS: Because 'Jarvis Agent Framework System' sounds better in meetings.",
+        "JAFS: The intelligent system that handles all your tasks.",
+        "JAFS: Boldly going where no framework has gone before.",
+        "JAFS: It's not a bug, it's a feature... a very advanced feature.",
+        "JAFS: For when your code needs that extra intelligence.",
+        "JAFS: Working hard so you don't have to explain the acronym to your boss.",
+        "JAFS: The framework that makes other developers impressed during code review.",
+        "JAFS: Seamless integration with your backend systems.",
+        "JAFS: Because 'JARVIS' was already taken as an acronym.",
+        "JAFS: Making developers productive in meetings since 2023."
     ]
     
     def __init__(self, verbose: bool = False, config_path: str = "config.yaml"):
@@ -74,14 +74,14 @@ class CLI(cmd.Cmd):
         """
         Display a welcome message.
         
-        Includes a random ANUS joke to brighten your day.
+        Includes a random JAFS joke to brighten your day.
         """
         term_width = shutil.get_terminal_size().columns
         
         print("=" * term_width)
-        print("ANUS - Autonomous Networked Utility System".center(term_width))
+        print("JAFS - Jarvis Agent Framework System".center(term_width))
         print("=" * term_width)
-        print(random.choice(self._anus_jokes).center(term_width))
+        print(random.choice(self._jafs_jokes).center(term_width))
         print("=" * term_width)
         print("Type 'help' or '?' to list available commands.".center(term_width))
         print("=" * term_width)
@@ -157,7 +157,7 @@ class CLI(cmd.Cmd):
         # Occasionally show a joke after results
         self.joke_counter += 1
         if self.joke_counter % 3 == 0:  # Every 3rd result
-            print(f"\nANUS Wisdom: {random.choice(self._anus_jokes)}")
+            print(f"\nJAFS Wisdom: {random.choice(self._jafs_jokes)}")
     
     def do_task(self, arg: str) -> None:
         """
@@ -177,7 +177,7 @@ class CLI(cmd.Cmd):
         
         if len(parts) == 0 or not arg.strip():
             print("Error: Please provide a task description.")
-            print("ANUS can't work with nothing. It needs substance.")
+            print("JAFS can't work with nothing. It needs a task to process.")
             return
         
         # Check if mode is specified
@@ -194,7 +194,7 @@ class CLI(cmd.Cmd):
             print(f"Mode: {mode}")
         
         if mode == "multi":
-            print("Multiple agents engaged. ANUS is working from all directions...")
+            print("Multiple agents engaged. JAFS is working collaboratively...")
         
         try:
             result = self.orchestrator.execute_task(task, mode=mode)
@@ -210,7 +210,7 @@ class CLI(cmd.Cmd):
             
         except Exception as e:
             print(f"Error executing task: {e}")
-            print("Even ANUS has its limits. Please try again.")
+            print("Even JAFS has its limits. Please try again.")
     
     def do_agents(self, arg: str) -> None:
         """
@@ -226,7 +226,7 @@ class CLI(cmd.Cmd):
         
         if not agents:
             print("No agents available.")
-            print("ANUS feels empty inside. Please add some agents.")
+            print("JAFS needs agents to function. Please add some agents.")
             return
         
         print("Available Agents:")
@@ -244,7 +244,7 @@ class CLI(cmd.Cmd):
             
         print(f"Total agents: {len(agents)}")
         if len(agents) > 5:
-            print("Wow, that's a lot to fit in one ANUS!")
+            print("Wow, that's a lot of agents working together!")
     
     def do_history(self, arg: str) -> None:
         """
@@ -268,7 +268,7 @@ class CLI(cmd.Cmd):
         
         if not history:
             print("No task history available.")
-            print("ANUS is clean as a whistle. No history to report.")
+            print("JAFS has no history to report yet.")
             return
         
         print("Task History:")
@@ -294,7 +294,7 @@ class CLI(cmd.Cmd):
         
         print(f"Showing {min(len(history), limit)} of {len(history)} total entries.")
         if len(history) > 10:
-            print("ANUS has been quite busy, hasn't it?")
+            print("JAFS has been quite productive, hasn't it?")
     
     def do_config(self, arg: str) -> None:
         """
@@ -310,21 +310,21 @@ class CLI(cmd.Cmd):
         print("-" * 60)
         
         self._pretty_print(self.orchestrator.config)
-        print("\nProTip: A well-configured ANUS is a happy ANUS.")
+        print("\nProTip: A well-configured JAFS is a productive JAFS.")
     
     def do_joke(self, arg: str) -> None:
         """
-        Display a random ANUS joke.
+        Display a random JAFS joke.
         
         Usage: joke
         """
-        joke = random.choice(self._anus_jokes)
+        joke = random.choice(self._jafs_jokes)
         
         term_width = shutil.get_terminal_size().columns
         
         print()
         print("=" * term_width)
-        print("ANUS WISDOM".center(term_width))
+        print("JAFS WISDOM".center(term_width))
         print("=" * term_width)
         print(joke.center(term_width))
         print("=" * term_width)
@@ -336,7 +336,7 @@ class CLI(cmd.Cmd):
         
         Usage: exit
         """
-        print("Exiting ANUS. We hope your experience wasn't too uncomfortable.")
+        print("Exiting JAFS. Thank you for using Jarvis Agent Framework System.")
         return True
     
     def do_quit(self, arg: str) -> bool:
@@ -360,7 +360,7 @@ class CLI(cmd.Cmd):
         """
         # 1 in 10 chance to show a joke on empty line
         if random.random() < 0.1:
-            print(f"ANUS is waiting... {random.choice(self._anus_jokes)}")
+            print(f"JAFS is waiting... {random.choice(self._jafs_jokes)}")
     
     def _pretty_print(self, data: Any) -> None:
         """
@@ -375,4 +375,4 @@ class CLI(cmd.Cmd):
             except Exception:
                 print(data)
         else:
-            print(data) 
+            print(data)
