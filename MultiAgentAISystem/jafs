@@ -1,0 +1,15 @@
+#!/bin/bash
+# JAFS - Jarvis Agent Framework System
+# Simple shell wrapper for the JAFS Python script
+
+# Get the directory of this script
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Get the parent directory (where jafs and anus directories are)
+PARENT_DIR="$( cd "$SCRIPT_DIR/.." &> /dev/null && pwd )"
+
+# Set PYTHONPATH to the parent directory
+export PYTHONPATH="$PARENT_DIR"
+
+# Run the Python script with all arguments
+python "$SCRIPT_DIR/jafs.py" "$@"
